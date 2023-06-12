@@ -1,5 +1,12 @@
+import { Slider, Slide } from "./components";
+
 function App() {
-  return <div className="App">SLIDER APP</div>;
+  return (
+    <section className="section-center">
+      <Slider />
+      
+    </section>
+  )
 }
 
-export default App;
+export default App;  
