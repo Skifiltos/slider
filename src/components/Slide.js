@@ -1,12 +1,13 @@
 import React from "react";
+import starCreator from "../utils/starCreator";
 
-  const Slide = ({autore, rencesione, voto, classes}) => {
+  const Slide = ({autore, recensione, voto, classes}) => {
   return (
-    <article className={`slide ${classes}`}>
+    <article className={`slide ${classes}`}> 
       <div className="review">
         <h4>{autore}</h4>
-        <p>{rencesione}</p>
-        <div className="star-container">{voto}</div>
+        <p>{recensione}</p>
+        <div className="star-container">{starCreator(voto)}</div>
       </div>
     </article>
   );
