@@ -7,7 +7,7 @@ const data = [
     autore: "Dejan Kulusewski",
   },
   {
-    id: 2,
+    id: 2, 
     voto: 5,
     recensione:
       "Ennui fixie cred, freegan knausgaard hashtag quinoa artisan subway tile street art shabby chic brooklyn.",

@@ -19,6 +19,7 @@ const Slider = () => {
     });
   };
 
+  
   // passa alla precedente slide
   const precedenteSlide = () => {
     setActive((prevValue) => {
@@ -30,6 +31,14 @@ const Slider = () => {
       return prevValue - 1;
     });
   };
+
+  useEffect (() => {
+    const timer = setTimeout(() => {
+      prossimaSlide();
+    }, 5000);
+    return () => clearTimeout(timer);
+  }, [active]);
+
 
   return (
     <div className="container slider">

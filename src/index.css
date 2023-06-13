@@ -152,7 +152,7 @@ p {
   display: -webkit-flex;
   display: -ms-flex;
   flex-wrap: nowrap;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
   position: relative;
   min-height: 400px;
   width: 100%;
@@ -269,9 +269,11 @@ p {
   width: 100%;
 }
 
+
+
 .slider-btn-group {
   position: absolute;
-  bottom: 30px;
+  bottom: 1px;
   left: 50%;
   transform: translateX(-50%);
   width: 90%;
